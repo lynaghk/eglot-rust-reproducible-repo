@@ -1,3 +1,5 @@
+This repo is a reproducible test case for this [eglot issue](https://github.com/joaotavora/eglot/issues/391).
+
 ## Problem
 
 When using a path dependency in Cargo, flymake doesn't update with changes to that dependency.
