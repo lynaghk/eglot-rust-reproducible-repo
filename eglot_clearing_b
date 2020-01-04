@@ -1,0 +1,315 @@
+client-request (id:1) Fri Jan  3 15:14:21 2020:
+(:jsonrpc "2.0" :id 1 :method "initialize" :params
+          (:processId 22109 :rootPath "/Users/dev/work/eglot-rust-reproducible-repo/consumer/" :rootUri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/" :initializationOptions nil :capabilities
+                      (:workspace
+                       (:applyEdit t :executeCommand
+                                   (:dynamicRegistration :json-false)
+                                   :workspaceEdit
+                                   (:documentChanges :json-false)
+                                   :didChangeWatchedFiles
+                                   (:dynamicRegistration t)
+                                   :symbol
+                                   (:dynamicRegistration :json-false)
+                                   :configuration t)
+                       :textDocument
+                       (:synchronization
+                        (:dynamicRegistration :json-false :willSave t :willSaveWaitUntil t :didSave t)
+                        :completion
+                        (:dynamicRegistration :json-false :completionItem
+                                              (:snippetSupport :json-false)
+                                              :contextSupport t)
+                        :hover
+                        (:dynamicRegistration :json-false :contentFormat
+                                              ["markdown" "plaintext"])
+                        :signatureHelp
+                        (:dynamicRegistration :json-false :signatureInformation
+                                              (:parameterInformation
+                                               (:labelOffsetSupport t)))
+                        :references
+                        (:dynamicRegistration :json-false)
+                        :definition
+                        (:dynamicRegistration :json-false)
+                        :declaration
+                        (:dynamicRegistration :json-false)
+                        :implementation
+                        (:dynamicRegistration :json-false)
+                        :typeDefinition
+                        (:dynamicRegistration :json-false)
+                        :documentSymbol
+                        (:dynamicRegistration :json-false :symbolKind
+                                              (:valueSet
+                                               [1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26]))
+                        :documentHighlight
+                        (:dynamicRegistration :json-false)
+                        :codeAction
+                        (:dynamicRegistration :json-false :codeActionLiteralSupport
+                                              (:codeActionKind
+                                               (:valueSet
+                                                ["quickfix" "refactor" "refactor.extract" "refactor.inline" "refactor.rewrite" "source" "source.organizeImports"])))
+                        :formatting
+                        (:dynamicRegistration :json-false)
+                        :rangeFormatting
+                        (:dynamicRegistration :json-false)
+                        :rename
+                        (:dynamicRegistration :json-false)
+                        :publishDiagnostics
+                        (:relatedInformation :json-false))
+                       :experimental nil)))
+
+server-reply (id:1) Fri Jan  3 15:14:21 2020:
+(:jsonrpc "2.0" :id 1 :result
+          (:capabilities
+           (:textDocumentSync 2 :hoverProvider t :completionProvider
+                              (:resolveProvider t :triggerCharacters
+                                                ["." ":"])
+                              :definitionProvider t :implementationProvider t :referencesProvider t :documentHighlightProvider t :documentSymbolProvider t :workspaceSymbolProvider t :codeActionProvider t :codeLensProvider
+                              (:resolveProvider :json-false)
+                              :documentFormattingProvider t :documentRangeFormattingProvider :json-false :renameProvider t :executeCommandProvider
+                              (:commands
+                               ["rls.applySuggestion-22247" "rls.deglobImports-22247"]))))
+
+client-notification Fri Jan  3 15:14:21 2020:
+(:jsonrpc "2.0" :method "initialized" :params #s(hash-table size 65 test eql rehash-size 1.5 rehash-threshold 0.8125 data
+                                                            ()))
+
+client-notification Fri Jan  3 15:14:21 2020:
+(:jsonrpc "2.0" :method "textDocument/didOpen" :params
+          (:textDocument
+           (:uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs" :version 0 :languageId "rust" :text "use dep::Foo;\n\nfn main() {\n    let f = Foo { a: 1, b: 2 };\n}\n")))
+
+client-notification Fri Jan  3 15:14:21 2020:
+(:jsonrpc "2.0" :method "workspace/didChangeConfiguration" :params
+          (:settings nil))
+
+server-notification Fri Jan  3 15:14:21 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_1" :message nil :percentage nil :title "Building"))
+
+server-request (id:1) Fri Jan  3 15:14:21 2020:
+(:jsonrpc "2.0" :method "client/registerCapability" :id 1 :params
+          (:registrations
+           [(:id "rls-watch" :method "workspace/didChangeWatchedFiles" :registerOptions
+                 (:watchers
+                  [(:globPattern "/Users/dev/work/eglot-rust-reproducible-repo/consumer//Cargo.lock")
+                   (:globPattern "/Users/dev/work/eglot-rust-reproducible-repo/consumer//target" :kind 4)
+                   (:globPattern "/Users/dev/work/eglot-rust-reproducible-repo/consumer/Cargo.toml")]))]))
+
+client-reply (id:1) Fri Jan  3 15:14:21 2020:
+(:jsonrpc "2.0" :id 1 :result nil)
+
+server-notification Fri Jan  3 15:14:21 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_1" :message "dep" :percentage nil :title "Building"))
+
+server-notification Fri Jan  3 15:14:22 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_1" :message "consumer cfg(test)" :percentage nil :title "Building"))
+
+server-notification Fri Jan  3 15:14:22 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_1" :message "consumer" :percentage nil :title "Building"))
+
+server-notification Fri Jan  3 15:14:22 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done t :id "progress_1" :message nil :percentage nil :title "Building"))
+
+server-notification Fri Jan  3 15:14:22 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_0" :message nil :percentage nil :title "Indexing"))
+
+server-notification Fri Jan  3 15:14:22 2020:
+(:jsonrpc "2.0" :method "textDocument/publishDiagnostics" :params
+          (:diagnostics
+           [(:code "unused_variables" :message "unused variable: `f`\n\nnote: `#[warn(unused_variables)]` on by default\nhelp: consider prefixing with an underscore: `_f`" :range
+                   (:end
+                    (:character 9 :line 3)
+                    :start
+                    (:character 8 :line 3))
+                   :severity 2 :source "rustc")]
+           :uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs"))
+
+server-notification Fri Jan  3 15:14:22 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done t :id "progress_0" :message nil :percentage nil :title "Indexing"))
+
+client-request (id:2) Fri Jan  3 15:14:26 2020:
+(:jsonrpc "2.0" :id 2 :method "textDocument/definition" :params
+          (:textDocument
+           (:uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs")
+           :position
+           (:line 3 :character 13)))
+
+server-reply (id:2) Fri Jan  3 15:14:26 2020:
+(:jsonrpc "2.0" :id 2 :result
+          [(:uri "file:///Users/dev/work/eglot-rust-reproducible-repo/dep/src/lib.rs" :range
+                 (:start
+                  (:line 0 :character 11)
+                  :end
+                  (:line 0 :character 14)))])
+
+client-notification Fri Jan  3 15:14:31 2020:
+(:jsonrpc "2.0" :method "textDocument/willSave" :params
+          (:reason 1 :textDocument
+                   (:uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs")))
+
+client-notification Fri Jan  3 15:14:31 2020:
+(:jsonrpc "2.0" :method "textDocument/didChange" :params
+          (:textDocument
+           (:uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs" :version 3)
+           :contentChanges
+           [(:range
+             (:start
+              (:line 3 :character 31)
+              :end
+              (:line 3 :character 31))
+             :rangeLength 0 :text " ")
+            (:range
+             (:start
+              (:line 0 :character 0)
+              :end
+              (:line 5 :character 0))
+             :rangeLength 62 :text "")
+            (:range
+             (:start
+              (:line 0 :character 0)
+              :end
+              (:line 0 :character 0))
+             :rangeLength 0 :text "use dep::Foo;\n\nfn main() {\n    let f = Foo { a: 1, b: 2 };\n}\n")]))
+
+client-notification Fri Jan  3 15:14:31 2020:
+(:jsonrpc "2.0" :method "textDocument/didSave" :params
+          (:text "use dep::Foo;\n\nfn main() {\n    let f = Foo { a: 1, b: 2 };\n}\n" :textDocument
+                 (:uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs")))
+
+server-notification Fri Jan  3 15:14:32 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_3" :message nil :percentage nil :title "Building"))
+
+server-notification Fri Jan  3 15:14:32 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_3" :message "consumer cfg(test)" :percentage nil :title "Building"))
+
+server-notification Fri Jan  3 15:14:32 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_3" :message "consumer" :percentage nil :title "Building"))
+
+server-notification Fri Jan  3 15:14:32 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done t :id "progress_3" :message nil :percentage nil :title "Building"))
+
+server-notification Fri Jan  3 15:14:32 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_2" :message nil :percentage nil :title "Indexing"))
+
+server-notification Fri Jan  3 15:14:32 2020:
+(:jsonrpc "2.0" :method "textDocument/publishDiagnostics" :params
+          (:diagnostics
+           [(:code "unused_variables" :message "unused variable: `f`\n\nnote: `#[warn(unused_variables)]` on by default\nhelp: consider prefixing with an underscore: `_f`" :range
+                   (:end
+                    (:character 9 :line 3)
+                    :start
+                    (:character 8 :line 3))
+                   :severity 2 :source "rustc")]
+           :uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs"))
+
+server-notification Fri Jan  3 15:14:32 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done t :id "progress_2" :message nil :percentage nil :title "Indexing"))
+
+client-request (id:3) Fri Jan  3 15:14:38 2020:
+(:jsonrpc "2.0" :id 3 :method "textDocument/hover" :params
+          (:textDocument
+           (:uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs")
+           :position
+           (:line 3 :character 31)))
+
+client-request (id:4) Fri Jan  3 15:14:38 2020:
+(:jsonrpc "2.0" :id 4 :method "textDocument/documentHighlight" :params
+          (:textDocument
+           (:uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs")
+           :position
+           (:line 3 :character 31)))
+
+server-reply (id:3) Fri Jan  3 15:14:38 2020:
+(:jsonrpc "2.0" :id 3 :result
+          (:contents
+           []
+           :range
+           (:start
+            (:line 3 :character 31)
+            :end
+            (:line 3 :character 31))))
+
+server-reply (id:4) Fri Jan  3 15:14:38 2020:
+(:jsonrpc "2.0" :id 4 :result
+          [])
+
+client-notification Fri Jan  3 15:14:40 2020:
+(:jsonrpc "2.0" :method "textDocument/willSave" :params
+          (:reason 1 :textDocument
+                   (:uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs")))
+
+client-notification Fri Jan  3 15:14:40 2020:
+(:jsonrpc "2.0" :method "textDocument/didChange" :params
+          (:textDocument
+           (:uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs" :version 6)
+           :contentChanges
+           [(:range
+             (:start
+              (:line 3 :character 31)
+              :end
+              (:line 3 :character 31))
+             :rangeLength 0 :text " ")
+            (:range
+             (:start
+              (:line 0 :character 0)
+              :end
+              (:line 5 :character 0))
+             :rangeLength 62 :text "")
+            (:range
+             (:start
+              (:line 0 :character 0)
+              :end
+              (:line 0 :character 0))
+             :rangeLength 0 :text "use dep::Foo;\n\nfn main() {\n    let f = Foo { a: 1, b: 2 };\n}\n")]))
+
+client-notification Fri Jan  3 15:14:40 2020:
+(:jsonrpc "2.0" :method "textDocument/didSave" :params
+          (:text "use dep::Foo;\n\nfn main() {\n    let f = Foo { a: 1, b: 2 };\n}\n" :textDocument
+                 (:uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs")))
+
+server-notification Fri Jan  3 15:14:40 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_5" :message nil :percentage nil :title "Building"))
+
+server-notification Fri Jan  3 15:14:40 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_5" :message "consumer cfg(test)" :percentage nil :title "Building"))
+
+server-notification Fri Jan  3 15:14:40 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_5" :message "consumer" :percentage nil :title "Building"))
+
+server-notification Fri Jan  3 15:14:40 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done t :id "progress_5" :message nil :percentage nil :title "Building"))
+
+server-notification Fri Jan  3 15:14:40 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done nil :id "progress_4" :message nil :percentage nil :title "Indexing"))
+
+server-notification Fri Jan  3 15:14:40 2020:
+(:jsonrpc "2.0" :method "textDocument/publishDiagnostics" :params
+          (:diagnostics
+           [(:code "unused_variables" :message "unused variable: `f`\n\nnote: `#[warn(unused_variables)]` on by default\nhelp: consider prefixing with an underscore: `_f`" :range
+                   (:end
+                    (:character 9 :line 3)
+                    :start
+                    (:character 8 :line 3))
+                   :severity 2 :source "rustc")]
+           :uri "file:///Users/dev/work/eglot-rust-reproducible-repo/consumer/src/main.rs"))
+
+server-notification Fri Jan  3 15:14:40 2020:
+(:jsonrpc "2.0" :method "window/progress" :params
+          (:done t :id "progress_4" :message nil :percentage nil :title "Indexing"))
+

@@ -1,0 +1,450 @@
+[2020-01-04T00:21:49Z WARN  rls] The RUSTC_WRAPPER environment variable is incompatible with RLS, removing it from the process environment
+[2020-01-04T00:21:49Z DEBUG rls::server] Language Server starting up. Version: rls 1.40.0 (5db91c7 2019-10-30)
+[2020-01-04T00:21:49Z DEBUG rls::build::rustc] rustc - stderr: 
+[2020-01-04T00:21:49Z DEBUG rls::build::rustc] rustc: analysis read successfully?: true
+[2020-01-04T00:21:49Z DEBUG rls::build::cargo] error deleting file, consumer-58f35d518d0de3b1.json: No such file or directory (os error 2)
+[2020-01-04T00:21:49Z DEBUG rls::build::rustc] rustc - stderr: {"message":"unused variable: `f`","code":{"code":"unused_variables","explanation":null},"level":"warning","spans":[{"file_name":"src/main.rs","byte_start":35,"byte_end":36,"line_start":4,"line_end":4,"column_start":9,"column_end":10,"is_primary":true,"text":[{"text":"    let f = Foo { a: 1, b: 2 };","highlight_start":9,"highlight_end":10}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"`#[warn(unused_variables)]` on by default","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"consider prefixing with an underscore","code":null,"level":"help","spans":[{"file_name":"src/main.rs","byte_start":35,"byte_end":36,"line_start":4,"line_end":4,"column_start":9,"column_end":10,"is_primary":true,"text":[{"text":"    let f = Foo { a: 1, b: 2 };","highlight_start":9,"highlight_end":10}],"label":null,"suggested_replacement":"_f","suggestion_applicability":"MachineApplicable","expansion":null}],"children":[],"rendered":null}],"rendered":"\u001b[0m\u001b[1m\u001b[33mwarning\u001b[0m\u001b[0m\u001b[1m: unused variable: `f`\u001b[0m\n\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/main.rs:4:9\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m4\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m    let f = Foo { a: 1, b: 2 };\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m        \u001b[0m\u001b[0m\u001b[1m\u001b[33m^\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[33mhelp: consider prefixing with an underscore: `_f`\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m= \u001b[0m\u001b[0m\u001b[1mnote\u001b[0m\u001b[0m: `#[warn(unused_variables)]` on by default\u001b[0m\n\n"}
+    
+[2020-01-04T00:21:49Z DEBUG rls::build::rustc] rustc: analysis read successfully?: true
+[2020-01-04T00:21:49Z DEBUG rls::build::rustc] rustc - stderr: {"message":"unused variable: `f`","code":{"code":"unused_variables","explanation":null},"level":"warning","spans":[{"file_name":"src/main.rs","byte_start":35,"byte_end":36,"line_start":4,"line_end":4,"column_start":9,"column_end":10,"is_primary":true,"text":[{"text":"    let f = Foo { a: 1, b: 2 };","highlight_start":9,"highlight_end":10}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"`#[warn(unused_variables)]` on by default","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"consider prefixing with an underscore","code":null,"level":"help","spans":[{"file_name":"src/main.rs","byte_start":35,"byte_end":36,"line_start":4,"line_end":4,"column_start":9,"column_end":10,"is_primary":true,"text":[{"text":"    let f = Foo { a: 1, b: 2 };","highlight_start":9,"highlight_end":10}],"label":null,"suggested_replacement":"_f","suggestion_applicability":"MachineApplicable","expansion":null}],"children":[],"rendered":null}],"rendered":"\u001b[0m\u001b[1m\u001b[33mwarning\u001b[0m\u001b[0m\u001b[1m: unused variable: `f`\u001b[0m\n\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/main.rs:4:9\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m4\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m    let f = Foo { a: 1, b: 2 };\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m        \u001b[0m\u001b[0m\u001b[1m\u001b[33m^\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[33mhelp: consider prefixing with an underscore: `_f`\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m= \u001b[0m\u001b[0m\u001b[1mnote\u001b[0m\u001b[0m: `#[warn(unused_variables)]` on by default\u001b[0m\n\n"}
+    
+[2020-01-04T00:21:49Z DEBUG rls::build::rustc] rustc: analysis read successfully?: true
+[2020-01-04T00:21:49Z INFO  rls::build] build finished in 206.8ms
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 858701229 }), name: "libpanic_unwind-852a3e1df20b2310.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libpanic_unwind-852a3e1df20b2310.json" 0.000191790s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 858806549 }), name: "liballoc-d0fc27c8cd3218b0.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/liballoc-d0fc27c8cd3218b0.json" 0.003326501s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 858951833 }), name: "liblibc-125e8fdae26f6ee0.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 859195261 }), name: "libterm-d7216f1f82c32903.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libterm-d7216f1f82c32903.json" 0.000236849s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 873868033 }), name: "libcore-aa843d2efb659243.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libcore-aa843d2efb659243.json" 0.011094872s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 874833621 }), name: "libhashbrown-8fb59334fc42c0d3.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libhashbrown-8fb59334fc42c0d3.json" 0.000891075s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 875710168 }), name: "libbacktrace-d1a451ffdfffc125.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libbacktrace-d1a451ffdfffc125.json" 0.000242683s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 875713743 }), name: "librustc_std_workspace_core-79e0a0ad580533d5.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/librustc_std_workspace_core-79e0a0ad580533d5.json" 0.000045716s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 875838913 }), name: "libunwind-de8b21b0f1502816.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libunwind-de8b21b0f1502816.json" 0.000222658s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 875891422 }), name: "libbacktrace_sys-78f2f6a92545f656.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libbacktrace_sys-78f2f6a92545f656.json" 0.000060208s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 876407141 }), name: "libcompiler_builtins-56a25690b79e4e56.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libcompiler_builtins-56a25690b79e4e56.json" 0.000419800s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 876420749 }), name: "libunwind-a2cbc799550e64b6.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libunwind-a2cbc799550e64b6.json" 0.000103785s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 876475239 }), name: "librustc_std_workspace_alloc-6a8cbafe195d3bb6.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/librustc_std_workspace_alloc-6a8cbafe195d3bb6.json" 0.000038019s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 876958201 }), name: "liballoc-6b9fb81d3e8b97c7.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/liballoc-6b9fb81d3e8b97c7.json" 0.002380814s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 878337232 }), name: "libtest-7fb92a1768193c09.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libtest-7fb92a1768193c09.json" 0.000631237s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 878438725 }), name: "librustc_demangle-13d9189231cf7059.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/librustc_demangle-13d9189231cf7059.json" 0.000085468s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 878477331 }), name: "librustc_std_workspace_std-837867a05780cb59.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/librustc_std_workspace_std-837867a05780cb59.json" 0.000045805s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 879416733 }), name: "libproc_macro-9bdb8600597bffd9.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libproc_macro-9bdb8600597bffd9.json" 0.000629094s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 888281151 }), name: "libstd-3ac152c3f0c6da4a.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libstd-3ac152c3f0c6da4a.json" 0.005672280s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 888894011 }), name: "libprofiler_builtins-851590897b71a6da.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libprofiler_builtins-851590897b71a6da.json" 0.000066259s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 888929656 }), name: "libstd-dc44f9d83fdd9d6a.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libstd-dc44f9d83fdd9d6a.json" 0.006279322s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 888998202 }), name: "libbacktrace_sys-900bb8831b14a64b.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libbacktrace_sys-900bb8831b14a64b.json" 0.000107494s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 889034551 }), name: "libhashbrown-0cdae3a9ab61fffa.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libhashbrown-0cdae3a9ab61fffa.json" 0.000727430s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894241879 }), name: "liblibc-6740ea440e94ec5b.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894533122 }), name: "libpanic_unwind-bf77646b97e30fab.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libpanic_unwind-bf77646b97e30fab.json" 0.000155656s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894568057 }), name: "librustc_tsan-6620ace892bbd8bb.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/librustc_tsan-6620ace892bbd8bb.json" 0.000074994s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894619911 }), name: "librustc_tsan-7410691942f712db.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/librustc_tsan-7410691942f712db.json" 0.000090941s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894720916 }), name: "libcompiler_builtins-fcb7ecdfe47da10c.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libcompiler_builtins-fcb7ecdfe47da10c.json" 0.000635502s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894722111 }), name: "librustc_asan-717d34b78eb3cf8c.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/librustc_asan-717d34b78eb3cf8c.json" 0.000056558s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894756852 }), name: "libpanic_abort-d6a0a295be63099c.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libpanic_abort-d6a0a295be63099c.json" 0.000060127s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 910490509 }), name: "libterm-ac47d07d7144433d.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libterm-ac47d07d7144433d.json" 0.000196776s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 910523717 }), name: "librustc_demangle-d1d4cab398b3ae6d.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/librustc_demangle-d1d4cab398b3ae6d.json" 0.000094106s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 910563384 }), name: "libcfg_if-4dbd0a56650261ad.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libcfg_if-4dbd0a56650261ad.json" 0.000057940s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 910848247 }), name: "libcore-da51aa61852252ac.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libcore-da51aa61852252ac.json" 0.012602846s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 911468581 }), name: "libbacktrace-3ce4ff4f5f9747ad.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libbacktrace-3ce4ff4f5f9747ad.json" 0.000295413s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 911935884 }), name: "librustc_asan-da3399d11de8c6dd.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/librustc_asan-da3399d11de8c6dd.json" 0.000055151s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912457478 }), name: "libgetopts-bf844da83d6518dd.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libgetopts-bf844da83d6518dd.json" 0.000144872s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912499447 }), name: "libunicode_width-221bd517433b2edd.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libunicode_width-221bd517433b2edd.json" 0.000062925s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912559218 }), name: "libprofiler_builtins-c1907a441a541ffd.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libprofiler_builtins-c1907a441a541ffd.json" 0.000043674s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912595497 }), name: "libunicode_width-fe24e95a855c9f6e.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libunicode_width-fe24e95a855c9f6e.json" 0.000059441s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912631718 }), name: "libcfg_if-f1aad9cf7e690e9e.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libcfg_if-f1aad9cf7e690e9e.json" 0.000038987s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912681863 }), name: "librustc_std_workspace_alloc-8f6af59515504fce.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/librustc_std_workspace_alloc-8f6af59515504fce.json" 0.000038457s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912719160 }), name: "libpanic_abort-4d5f5abac10caefe.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libpanic_abort-4d5f5abac10caefe.json" 0.000057865s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912730956 }), name: "librustc_std_workspace_std-cf25ad8838fef60f.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/librustc_std_workspace_std-cf25ad8838fef60f.json" 0.000060428s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912746611 }), name: "librustc_std_workspace_core-77d3536172f00e2f.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/librustc_std_workspace_core-77d3536172f00e2f.json" 0.000045970s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 913780043 }), name: "libproc_macro-813469942b5a2bef.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libproc_macro-813469942b5a2bef.json" 0.000946399s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 913787189 }), name: "libgetopts-1988d9ef7be544ff.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis/libgetopts-1988d9ef7be544ff.json" 0.000188362s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading 45 crates from /Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis in 0.051680345s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1578097309, tv_nsec: 656465329 }), name: "libdep-5024f068f33a5b05.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/work/eglot-rust-reproducible-repo/consumer/target/rls/debug/deps/save-analysis/libdep-5024f068f33a5b05.json" 0.000046696s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1578097309, tv_nsec: 717869951 }), name: "consumer-968c889df765a461.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/work/eglot-rust-reproducible-repo/consumer/target/rls/debug/deps/save-analysis/consumer-968c889df765a461.json" 0.000048585s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1578097309, tv_nsec: 775148177 }), name: "consumer-58f35d518d0de3b1.json" }
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading "/Users/dev/work/eglot-rust-reproducible-repo/consumer/target/rls/debug/deps/save-analysis/consumer-58f35d518d0de3b1.json" 0.000048961s
+[2020-01-04T00:21:49Z INFO  rls_analysis::raw] reading 48 crates from /Users/dev/work/eglot-rust-reproducible-repo/consumer/target/rls/debug/deps/save-analysis in 0.000195392s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering panic_unwind ((8577721313874284111, 16137300581844094671)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  41
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  1
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering alloc ((3924216512132021142, 13433065908605684942)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  555
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  29
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 2
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering term ((15800922363247554578, 6426947994398811522)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  79
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  5
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering core ((3618680160418901003, 4436458094075846561)) in 0.02s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  3127
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  224
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 2
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering hashbrown ((12751243558341424298, 8208218733697102305)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  220
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  2
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering backtrace ((13476873152031059067, 1670982726827608609)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  71
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  10
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 1
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering rustc_std_workspace_core ((10009283058736322418, 8662397509334631840)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  1
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering unwind ((12494727705318267478, 2256073161753409555)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  43
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering backtrace_sys ((3343469699151014521, 17617552553442970917)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  8
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering compiler_builtins ((13997615864128312784, 15444424790993528528)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  187
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  18
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering unwind ((13235301763130876389, 11956675772311029582)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering rustc_std_workspace_alloc ((16883613672242007063, 4043950386368543688)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  1
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering alloc ((6651775208963710977, 10811153210431601840)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  79
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering test ((15279529257053713077, 9068217911376066358)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  260
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  40
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 3
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering rustc_demangle ((4759184321302818619, 12022396673976004994)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  11
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering rustc_std_workspace_std ((15260750556123539504, 14010725238715882951)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  1
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/rpc.rs", range: Range { row_start: Row(188, PhantomData), row_end: Row(188, PhantomData), col_start: Column(8, PhantomData), col_end: Column(16, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 1450 }, span: SpanData { file_name: "src/libproc_macro/bridge/rpc.rs", byte_start: 84517, byte_end: 84525, line_start: Row(189, PhantomData), line_end: Row(189, PhantomData), column_start: Column(9, PhantomData), column_end: Column(17, PhantomData) }, name: "Included", qualname: "::<std::collections::Bound<T> as bridge::rpc::DecodeMut<\'a, \'_, S>>::decode::tag::Included", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/rpc.rs", range: Range { row_start: Row(189, PhantomData), row_end: Row(189, PhantomData), col_start: Column(8, PhantomData), col_end: Column(16, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 1451 }, span: SpanData { file_name: "src/libproc_macro/bridge/rpc.rs", byte_start: 84538, byte_end: 84546, line_start: Row(190, PhantomData), line_end: Row(190, PhantomData), column_start: Column(9, PhantomData), column_end: Column(17, PhantomData) }, name: "Excluded", qualname: "::<std::collections::Bound<T> as bridge::rpc::DecodeMut<\'a, \'_, S>>::decode::tag::Excluded", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/rpc.rs", range: Range { row_start: Row(190, PhantomData), row_end: Row(190, PhantomData), col_start: Column(8, PhantomData), col_end: Column(17, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 1452 }, span: SpanData { file_name: "src/libproc_macro/bridge/rpc.rs", byte_start: 84559, byte_end: 84568, line_start: Row(191, PhantomData), line_end: Row(191, PhantomData), column_start: Column(9, PhantomData), column_end: Column(18, PhantomData) }, name: "Unbounded", qualname: "::<std::collections::Bound<T> as bridge::rpc::DecodeMut<\'a, \'_, S>>::decode::tag::Unbounded", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/rpc.rs", range: Range { row_start: Row(196, PhantomData), row_end: Row(196, PhantomData), col_start: Column(8, PhantomData), col_end: Column(12, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 1476 }, span: SpanData { file_name: "src/libproc_macro/bridge/rpc.rs", byte_start: 84629, byte_end: 84633, line_start: Row(197, PhantomData), line_end: Row(197, PhantomData), column_start: Column(9, PhantomData), column_end: Column(13, PhantomData) }, name: "None", qualname: "::<std::option::Option<T> as bridge::rpc::DecodeMut<\'a, \'_, S>>::decode::tag::None", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/rpc.rs", range: Range { row_start: Row(197, PhantomData), row_end: Row(197, PhantomData), col_start: Column(8, PhantomData), col_end: Column(12, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 1477 }, span: SpanData { file_name: "src/libproc_macro/bridge/rpc.rs", byte_start: 84643, byte_end: 84647, line_start: Row(198, PhantomData), line_end: Row(198, PhantomData), column_start: Column(9, PhantomData), column_end: Column(13, PhantomData) }, name: "Some", qualname: "::<std::option::Option<T> as bridge::rpc::DecodeMut<\'a, \'_, S>>::decode::tag::Some", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/rpc.rs", range: Range { row_start: Row(203, PhantomData), row_end: Row(203, PhantomData), col_start: Column(8, PhantomData), col_end: Column(10, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 1504 }, span: SpanData { file_name: "src/libproc_macro/bridge/rpc.rs", byte_start: 84714, byte_end: 84716, line_start: Row(204, PhantomData), line_end: Row(204, PhantomData), column_start: Column(9, PhantomData), column_end: Column(11, PhantomData) }, name: "Ok", qualname: "::<std::result::Result<T, E> as bridge::rpc::DecodeMut<\'a, \'_, S>>::decode::tag::Ok", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/rpc.rs", range: Range { row_start: Row(204, PhantomData), row_end: Row(204, PhantomData), col_start: Column(8, PhantomData), col_end: Column(11, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 1505 }, span: SpanData { file_name: "src/libproc_macro/bridge/rpc.rs", byte_start: 84729, byte_end: 84732, line_start: Row(205, PhantomData), line_end: Row(205, PhantomData), column_start: Column(9, PhantomData), column_end: Column(12, PhantomData) }, name: "Err", qualname: "::<std::result::Result<T, E> as bridge::rpc::DecodeMut<\'a, \'_, S>>::decode::tag::Err", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(344, PhantomData), row_end: Row(344, PhantomData), col_start: Column(8, PhantomData), col_end: Column(19, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2723 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 55279, byte_end: 55290, line_start: Row(345, PhantomData), line_end: Row(345, PhantomData), column_start: Column(9, PhantomData), column_end: Column(20, PhantomData) }, name: "Parenthesis", qualname: "::bridge::<impl bridge::rpc::DecodeMut<\'a, \'_, S> for Delimiter>::decode::tag::Parenthesis", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(345, PhantomData), row_end: Row(345, PhantomData), col_start: Column(8, PhantomData), col_end: Column(13, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2724 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 55300, byte_end: 55305, line_start: Row(346, PhantomData), line_end: Row(346, PhantomData), column_start: Column(9, PhantomData), column_end: Column(14, PhantomData) }, name: "Brace", qualname: "::bridge::<impl bridge::rpc::DecodeMut<\'a, \'_, S> for Delimiter>::decode::tag::Brace", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(346, PhantomData), row_end: Row(346, PhantomData), col_start: Column(8, PhantomData), col_end: Column(15, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2725 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 55315, byte_end: 55322, line_start: Row(347, PhantomData), line_end: Row(347, PhantomData), column_start: Column(9, PhantomData), column_end: Column(16, PhantomData) }, name: "Bracket", qualname: "::bridge::<impl bridge::rpc::DecodeMut<\'a, \'_, S> for Delimiter>::decode::tag::Bracket", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(347, PhantomData), row_end: Row(347, PhantomData), col_start: Column(8, PhantomData), col_end: Column(12, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2726 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 55332, byte_end: 55336, line_start: Row(348, PhantomData), line_end: Row(348, PhantomData), column_start: Column(9, PhantomData), column_end: Column(13, PhantomData) }, name: "None", qualname: "::bridge::<impl bridge::rpc::DecodeMut<\'a, \'_, S> for Delimiter>::decode::tag::None", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(352, PhantomData), row_end: Row(352, PhantomData), col_start: Column(8, PhantomData), col_end: Column(13, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2757 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 55392, byte_end: 55397, line_start: Row(353, PhantomData), line_end: Row(353, PhantomData), column_start: Column(9, PhantomData), column_end: Column(14, PhantomData) }, name: "Error", qualname: "::bridge::<impl bridge::rpc::DecodeMut<\'a, \'_, S> for diagnostic::Level>::decode::tag::Error", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(353, PhantomData), row_end: Row(353, PhantomData), col_start: Column(8, PhantomData), col_end: Column(15, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2758 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 55407, byte_end: 55414, line_start: Row(354, PhantomData), line_end: Row(354, PhantomData), column_start: Column(9, PhantomData), column_end: Column(16, PhantomData) }, name: "Warning", qualname: "::bridge::<impl bridge::rpc::DecodeMut<\'a, \'_, S> for diagnostic::Level>::decode::tag::Warning", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(354, PhantomData), row_end: Row(354, PhantomData), col_start: Column(8, PhantomData), col_end: Column(12, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2759 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 55424, byte_end: 55428, line_start: Row(355, PhantomData), line_end: Row(355, PhantomData), column_start: Column(9, PhantomData), column_end: Column(13, PhantomData) }, name: "Note", qualname: "::bridge::<impl bridge::rpc::DecodeMut<\'a, \'_, S> for diagnostic::Level>::decode::tag::Note", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(355, PhantomData), row_end: Row(355, PhantomData), col_start: Column(8, PhantomData), col_end: Column(12, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2760 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 55438, byte_end: 55442, line_start: Row(356, PhantomData), line_end: Row(356, PhantomData), column_start: Column(9, PhantomData), column_end: Column(13, PhantomData) }, name: "Help", qualname: "::bridge::<impl bridge::rpc::DecodeMut<\'a, \'_, S> for diagnostic::Level>::decode::tag::Help", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(361, PhantomData), row_end: Row(361, PhantomData), col_start: Column(8, PhantomData), col_end: Column(13, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2787 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 55556, byte_end: 55561, line_start: Row(362, PhantomData), line_end: Row(362, PhantomData), column_start: Column(9, PhantomData), column_end: Column(14, PhantomData) }, name: "Alone", qualname: "::bridge::<impl bridge::rpc::DecodeMut<\'a, \'_, S> for Spacing>::decode::tag::Alone", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(362, PhantomData), row_end: Row(362, PhantomData), col_start: Column(8, PhantomData), col_end: Column(13, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2788 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 55571, byte_end: 55576, line_start: Row(363, PhantomData), line_end: Row(363, PhantomData), column_start: Column(9, PhantomData), column_end: Column(14, PhantomData) }, name: "Joint", qualname: "::bridge::<impl bridge::rpc::DecodeMut<\'a, \'_, S> for Spacing>::decode::tag::Joint", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(399, PhantomData), row_end: Row(399, PhantomData), col_start: Column(8, PhantomData), col_end: Column(13, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2854 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 56799, byte_end: 56804, line_start: Row(400, PhantomData), line_end: Row(400, PhantomData), column_start: Column(9, PhantomData), column_end: Column(14, PhantomData) }, name: "Group", qualname: "::<bridge::TokenTree<G, P, I, L> as bridge::rpc::DecodeMut<\'a, \'_, S>>::decode::tag::Group", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(400, PhantomData), row_end: Row(400, PhantomData), col_start: Column(8, PhantomData), col_end: Column(13, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2855 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 56818, byte_end: 56823, line_start: Row(401, PhantomData), line_end: Row(401, PhantomData), column_start: Column(9, PhantomData), column_end: Column(14, PhantomData) }, name: "Punct", qualname: "::<bridge::TokenTree<G, P, I, L> as bridge::rpc::DecodeMut<\'a, \'_, S>>::decode::tag::Punct", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(401, PhantomData), row_end: Row(401, PhantomData), col_start: Column(8, PhantomData), col_end: Column(13, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2856 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 56837, byte_end: 56842, line_start: Row(402, PhantomData), line_end: Row(402, PhantomData), column_start: Column(9, PhantomData), column_end: Column(14, PhantomData) }, name: "Ident", qualname: "::<bridge::TokenTree<G, P, I, L> as bridge::rpc::DecodeMut<\'a, \'_, S>>::decode::tag::Ident", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z DEBUG rls_analysis::lowering] def already exists at span: Span { file: "/Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src/libproc_macro/bridge/mod.rs", range: Range { row_start: Row(402, PhantomData), row_end: Row(402, PhantomData), col_start: Column(8, PhantomData), col_end: Column(15, PhantomData) } } Def { kind: Const, id: Id { krate: 0, index: 2857 }, span: SpanData { file_name: "src/libproc_macro/bridge/mod.rs", byte_start: 56856, byte_end: 56863, line_start: Row(403, PhantomData), line_end: Row(403, PhantomData), column_start: Column(9, PhantomData), column_end: Column(16, PhantomData) }, name: "Literal", qualname: "::<bridge::TokenTree<G, P, I, L> as bridge::rpc::DecodeMut<\'a, \'_, S>>::decode::tag::Literal", value: "u8", parent: None, children: [], decl_id: None, docs: "", sig: None, attributes: [] }
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering proc_macro ((7555614839178984898, 2624587602687586440)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  221
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  9
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering std ((12059811760869242821, 16380710093984993237)) in 0.01s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  1986
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  326
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 11
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering profiler_builtins ((14264392114384282251, 9805910586721872366)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  1
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering std ((12480940028815742386, 17133840292323062676)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  26
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering backtrace_sys ((1295962249923865998, 4753204618089216455)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering hashbrown ((11309261669264167917, 12633313349437080871)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering panic_unwind ((2660116328215505580, 9545010463301493925)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering rustc_tsan ((9727094667042382141, 6161414026217678947)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  1
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering rustc_tsan ((17751082389420773792, 10495745955861657247)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering compiler_builtins ((9032649326521538135, 12667967411968509476)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering rustc_asan ((1648987694978862037, 6989574837920756960)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  1
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering panic_abort ((11589121551692388459, 8816901573223017785)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  5
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering term ((18051533849665523002, 8090058425336357062)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering rustc_demangle ((14362380231532481885, 9279281352292708870)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering cfg_if ((10461541221620442329, 12421770172134368369)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  1
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering core ((12740277115278631702, 12640810556085455126)) in 0.01s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering backtrace ((1041246640194432752, 18216372201816767321)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering rustc_asan ((881513219894446945, 13431892838563625024)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering getopts ((11261178668691261959, 149136655627288661)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  48
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering unicode_width ((1980323860193990986, 17893892428835964698)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  10
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  1
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering profiler_builtins ((9827398645780087275, 12469167737532498997)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering unicode_width ((4381734200739311916, 16556727026497791775)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering cfg_if ((5839480494490908876, 4697973287732230237)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering rustc_std_workspace_alloc ((11563747115584760512, 7975991426192958756)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering panic_abort ((5568845692264355168, 2127527034457260111)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering rustc_std_workspace_std ((6256704976337411602, 342189609757083764)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering rustc_std_workspace_core ((2654623720322334603, 6731640665728884700)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering proc_macro ((8418589903628295589, 17769476704670479029)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering getopts ((3268920995917386079, 1749599673220159146)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering dep ((9764205237016921320, 15390464119745984259)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  4
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering consumer ((8655255519768882464, 13443196363261273851)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  3
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  4
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering consumer ((15536257077663787554, 1049441116369766798)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  4
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Total lowering time: 0.08s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Diff in rss: 0.00KB
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering dep ((9764205237016921320, 15390464119745984259)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  4
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering consumer ((8655255519768882464, 13443196363261273851)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  3
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  4
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Lowering consumer ((15536257077663787554, 1049441116369766798)) in 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     refs:  4
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Total lowering time: 0.00s
+[2020-01-04T00:21:49Z INFO  rls_analysis::lowering] Diff in rss: 0.00KB
+[2020-01-04T00:21:50Z DEBUG rls::actions::hover] tooltip_local_variable_decl: f
+[2020-01-04T00:21:50Z DEBUG rls::actions::hover] tooltip: contents.len: 1
+[2020-01-04T00:21:50Z DEBUG rls::actions::hover] tooltip_struct_enum_union_trait: Foo
+[2020-01-04T00:21:50Z DEBUG rls::actions::hover] extract_decl: row_start: Row(0, PhantomData), file: "/Users/dev/work/eglot-rust-reproducible-repo/dep/src/lib.rs"
+[2020-01-04T00:21:50Z DEBUG rls::actions::hover] format_object: pub struct Foo
+[2020-01-04T00:21:50Z DEBUG rls::actions::hover] extract_docs: row_start = Row(0, PhantomData), up = false, file = "/Users/dev/work/eglot-rust-reproducible-repo/dep/src/lib.rs"
+[2020-01-04T00:21:50Z DEBUG rls::actions::hover] extract_docs: complete: row_end = Row(1, PhantomData) (exclusive), up = false, file = "/Users/dev/work/eglot-rust-reproducible-repo/dep/src/lib.rs"
+[2020-01-04T00:21:50Z DEBUG rls::actions::hover] tooltip: contents.len: 1
+[2020-01-04T00:21:52Z DEBUG rls::actions::hover] tooltip_struct_enum_union_trait: Foo
+[2020-01-04T00:21:52Z DEBUG rls::actions::hover] extract_decl: row_start: Row(0, PhantomData), file: "/Users/dev/work/eglot-rust-reproducible-repo/dep/src/lib.rs"
+[2020-01-04T00:21:52Z DEBUG rls::actions::hover] format_object: pub struct Foo
+[2020-01-04T00:21:52Z DEBUG rls::actions::hover] extract_docs: row_start = Row(0, PhantomData), up = false, file = "/Users/dev/work/eglot-rust-reproducible-repo/dep/src/lib.rs"
+[2020-01-04T00:21:52Z DEBUG rls::actions::hover] extract_docs: complete: row_end = Row(1, PhantomData) (exclusive), up = false, file = "/Users/dev/work/eglot-rust-reproducible-repo/dep/src/lib.rs"
+[2020-01-04T00:21:52Z DEBUG rls::actions::hover] tooltip: contents.len: 1
+[2020-01-04T00:21:56Z DEBUG rls::actions::hover] tooltip_field_or_variant: b
+[2020-01-04T00:21:56Z DEBUG rls::actions::hover] extract_docs: row_start = Row(2, PhantomData), up = true, file = "/Users/dev/work/eglot-rust-reproducible-repo/dep/src/lib.rs"
+[2020-01-04T00:21:56Z DEBUG rls::actions::hover] extract_docs: complete: row_end = Row(0, PhantomData) (exclusive), up = true, file = "/Users/dev/work/eglot-rust-reproducible-repo/dep/src/lib.rs"
+[2020-01-04T00:21:56Z DEBUG rls::actions::hover] tooltip: contents.len: 1
+[2020-01-04T00:21:56Z INFO  rls_analysis] find_all_refs: 0.000042099s
+[2020-01-04T00:21:57Z DEBUG rls::build] sleeping 1.5s
+[2020-01-04T00:21:58Z DEBUG rls::build::rustc] rustc - stderr: 
+[2020-01-04T00:21:58Z DEBUG rls::build::rustc] rustc: analysis read successfully?: true
+[2020-01-04T00:21:58Z DEBUG rls::build::rustc] rustc - stderr: {"message":"struct `dep::Foo` has no field named `b`","code":{"code":"E0560","explanation":"\nAn unknown field was specified into a structure.\n\nErroneous code example:\n\n```compile_fail,E0560\nstruct Simba {\n    mother: u32,\n}\n\nlet s = Simba { mother: 1, father: 0 };\n// error: structure `Simba` has no field named `father`\n```\n\nVerify you didn't misspell the field's name or that the field exists. Example:\n\n```\nstruct Simba {\n    mother: u32,\n    father: u32,\n}\n\nlet s = Simba { mother: 1, father: 0 }; // ok!\n```\n"},"level":"error","spans":[{"file_name":"src/main.rs","byte_start":51,"byte_end":52,"line_start":4,"line_end":4,"column_start":25,"column_end":26,"is_primary":true,"text":[{"text":"    let f = Foo { a: 1, b: 2 };","highlight_start":25,"highlight_end":26}],"label":"`dep::Foo` does not have this field","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"available fields are: `a`","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"\u001b[0m\u001b[1m\u001b[38;5;9merror[E0560]\u001b[0m\u001b[0m\u001b[1m: struct `dep::Foo` has no field named `b`\u001b[0m\n\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/main.rs:4:25\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m4\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m    let f = Foo { a: 1, b: 2 };\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m                        \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;9m^\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;9m`dep::Foo` does not have this field\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m= \u001b[0m\u001b[0m\u001b[1mnote\u001b[0m\u001b[0m: available fields are: `a`\u001b[0m\n\n"}
+    {"message":"aborting due to previous error","code":null,"level":"error","spans":[],"children":[],"rendered":"\u001b[0m\u001b[1m\u001b[38;5;9merror\u001b[0m\u001b[0m\u001b[1m: aborting due to previous error\u001b[0m\n\n"}
+    {"message":"For more information about this error, try `rustc --explain E0560`.","code":null,"level":"failure-note","spans":[],"children":[],"rendered":"\u001b[0m\u001b[1mFor more information about this error, try `rustc --explain E0560`.\u001b[0m\n"}
+    
+[2020-01-04T00:21:58Z DEBUG rls::build::rustc] rustc: analysis read successfully?: false
+[2020-01-04T00:21:58Z DEBUG rls::build::rustc] rustc - stderr: {"message":"struct `dep::Foo` has no field named `b`","code":{"code":"E0560","explanation":"\nAn unknown field was specified into a structure.\n\nErroneous code example:\n\n```compile_fail,E0560\nstruct Simba {\n    mother: u32,\n}\n\nlet s = Simba { mother: 1, father: 0 };\n// error: structure `Simba` has no field named `father`\n```\n\nVerify you didn't misspell the field's name or that the field exists. Example:\n\n```\nstruct Simba {\n    mother: u32,\n    father: u32,\n}\n\nlet s = Simba { mother: 1, father: 0 }; // ok!\n```\n"},"level":"error","spans":[{"file_name":"src/main.rs","byte_start":51,"byte_end":52,"line_start":4,"line_end":4,"column_start":25,"column_end":26,"is_primary":true,"text":[{"text":"    let f = Foo { a: 1, b: 2 };","highlight_start":25,"highlight_end":26}],"label":"`dep::Foo` does not have this field","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"available fields are: `a`","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"\u001b[0m\u001b[1m\u001b[38;5;9merror[E0560]\u001b[0m\u001b[0m\u001b[1m: struct `dep::Foo` has no field named `b`\u001b[0m\n\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m--> \u001b[0m\u001b[0msrc/main.rs:4:25\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m\u001b[1m\u001b[38;5;12m4\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m    let f = Foo { a: 1, b: 2 };\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m| \u001b[0m\u001b[0m                        \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;9m^\u001b[0m\u001b[0m \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;9m`dep::Foo` does not have this field\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m|\u001b[0m\n\u001b[0m  \u001b[0m\u001b[0m\u001b[1m\u001b[38;5;12m= \u001b[0m\u001b[0m\u001b[1mnote\u001b[0m\u001b[0m: available fields are: `a`\u001b[0m\n\n"}
+    {"message":"aborting due to previous error","code":null,"level":"error","spans":[],"children":[],"rendered":"\u001b[0m\u001b[1m\u001b[38;5;9merror\u001b[0m\u001b[0m\u001b[1m: aborting due to previous error\u001b[0m\n\n"}
+    {"message":"For more information about this error, try `rustc --explain E0560`.","code":null,"level":"failure-note","spans":[],"children":[],"rendered":"\u001b[0m\u001b[1mFor more information about this error, try `rustc --explain E0560`.\u001b[0m\n"}
+    
+[2020-01-04T00:21:58Z DEBUG rls::build::rustc] rustc: analysis read successfully?: false
+[2020-01-04T00:21:58Z INFO  rls::build] build finished in 152.8ms
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 858701229 }), name: "libpanic_unwind-852a3e1df20b2310.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 858806549 }), name: "liballoc-d0fc27c8cd3218b0.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 858951833 }), name: "liblibc-125e8fdae26f6ee0.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 859195261 }), name: "libterm-d7216f1f82c32903.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 873868033 }), name: "libcore-aa843d2efb659243.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 874833621 }), name: "libhashbrown-8fb59334fc42c0d3.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 875710168 }), name: "libbacktrace-d1a451ffdfffc125.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 875713743 }), name: "librustc_std_workspace_core-79e0a0ad580533d5.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 875838913 }), name: "libunwind-de8b21b0f1502816.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 875891422 }), name: "libbacktrace_sys-78f2f6a92545f656.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 876407141 }), name: "libcompiler_builtins-56a25690b79e4e56.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 876420749 }), name: "libunwind-a2cbc799550e64b6.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 876475239 }), name: "librustc_std_workspace_alloc-6a8cbafe195d3bb6.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 876958201 }), name: "liballoc-6b9fb81d3e8b97c7.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 878337232 }), name: "libtest-7fb92a1768193c09.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 878438725 }), name: "librustc_demangle-13d9189231cf7059.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 878477331 }), name: "librustc_std_workspace_std-837867a05780cb59.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 879416733 }), name: "libproc_macro-9bdb8600597bffd9.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 888281151 }), name: "libstd-3ac152c3f0c6da4a.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 888894011 }), name: "libprofiler_builtins-851590897b71a6da.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 888929656 }), name: "libstd-dc44f9d83fdd9d6a.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 888998202 }), name: "libbacktrace_sys-900bb8831b14a64b.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 889034551 }), name: "libhashbrown-0cdae3a9ab61fffa.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894241879 }), name: "liblibc-6740ea440e94ec5b.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894533122 }), name: "libpanic_unwind-bf77646b97e30fab.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894568057 }), name: "librustc_tsan-6620ace892bbd8bb.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894619911 }), name: "librustc_tsan-7410691942f712db.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894720916 }), name: "libcompiler_builtins-fcb7ecdfe47da10c.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894722111 }), name: "librustc_asan-717d34b78eb3cf8c.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 894756852 }), name: "libpanic_abort-d6a0a295be63099c.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 910490509 }), name: "libterm-ac47d07d7144433d.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 910523717 }), name: "librustc_demangle-d1d4cab398b3ae6d.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 910563384 }), name: "libcfg_if-4dbd0a56650261ad.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 910848247 }), name: "libcore-da51aa61852252ac.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 911468581 }), name: "libbacktrace-3ce4ff4f5f9747ad.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 911935884 }), name: "librustc_asan-da3399d11de8c6dd.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912457478 }), name: "libgetopts-bf844da83d6518dd.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912499447 }), name: "libunicode_width-221bd517433b2edd.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912559218 }), name: "libprofiler_builtins-c1907a441a541ffd.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912595497 }), name: "libunicode_width-fe24e95a855c9f6e.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912631718 }), name: "libcfg_if-f1aad9cf7e690e9e.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912681863 }), name: "librustc_std_workspace_alloc-8f6af59515504fce.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912719160 }), name: "libpanic_abort-4d5f5abac10caefe.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912730956 }), name: "librustc_std_workspace_std-cf25ad8838fef60f.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 912746611 }), name: "librustc_std_workspace_core-77d3536172f00e2f.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 913780043 }), name: "libproc_macro-813469942b5a2bef.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1576888586, tv_nsec: 913787189 }), name: "libgetopts-1988d9ef7be544ff.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] reading 0 crates from /Users/dev/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-apple-darwin/analysis in 0.000309787s
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1578097318, tv_nsec: 774896732 }), name: "libdep-5024f068f33a5b05.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] reading "/Users/dev/work/eglot-rust-reproducible-repo/consumer/target/rls/debug/deps/save-analysis/libdep-5024f068f33a5b05.json" 0.000054572s
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1578097318, tv_nsec: 828264081 }), name: "consumer-58f35d518d0de3b1.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] reading "/Users/dev/work/eglot-rust-reproducible-repo/consumer/target/rls/debug/deps/save-analysis/consumer-58f35d518d0de3b1.json" 0.000048373s
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] Considering Listing { kind: File(SystemTime { tv_sec: 1578097318, tv_nsec: 874356386 }), name: "consumer-968c889df765a461.json" }
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] reading "/Users/dev/work/eglot-rust-reproducible-repo/consumer/target/rls/debug/deps/save-analysis/consumer-968c889df765a461.json" 0.000040880s
+[2020-01-04T00:21:58Z INFO  rls_analysis::raw] reading 3 crates from /Users/dev/work/eglot-rust-reproducible-repo/consumer/target/rls/debug/deps/save-analysis in 0.000191789s
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering] Lowering dep ((9764205237016921320, 15390464119745984259)) in 0.00s
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering]     defs:  3
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering] Lowering consumer ((15536257077663787554, 1049441116369766798)) in 0.00s
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering]     defs:  3
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering]     refs:  3
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering] Lowering consumer ((8655255519768882464, 13443196363261273851)) in 0.00s
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering]     defs:  0
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering]     refs:  3
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering] Total lowering time: 0.00s
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering] Diff in rss: 0.00KB
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering] Lowering dep ((9764205237016921320, 15390464119745984259)) in 0.00s
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering]     defs:  3
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering]     refs:  0
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering]     globs: 0
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering] Total lowering time: 0.00s
+[2020-01-04T00:21:58Z INFO  rls_analysis::lowering] Diff in rss: 0.00KB
+[2020-01-04T00:22:05Z DEBUG rls::server] Server shutting down
